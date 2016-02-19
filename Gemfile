@@ -9,7 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'puma'
 gem 'foreman'
-gem 'devise'
+gem 'devise', github: 'plataformatec/devise', branch: 'master'
 gem 'quiet_assets'
 
 group :development, :test do
