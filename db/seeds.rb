@@ -15,3 +15,12 @@ user2 = User.create(email: 'torpong.boss@gmail.com',
                     password: '12345678',
                     password_confirmation: '12345678')
 user2.save!
+
+# msg1 = Message.create(content: 'hello from user1',
+#                       user_id: 1)
+# msg1.save!
+#
+# msg2 = Message.create(content: 'hello from user2',
+#                       user_id: 2)
+#
+# msg2.save!
