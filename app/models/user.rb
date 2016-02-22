@@ -15,6 +15,7 @@
 #  last_sign_in_ip        :string
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  username               :text
 #
 
 class User < ApplicationRecord
@@ -23,4 +24,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_many :messages
+  validates :username, uniqueness: true
+  before_save { self.username = username.downcase }
 end
