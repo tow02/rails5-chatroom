@@ -1,7 +1,9 @@
-<h1>Chat room</h1>
-
 <div id="messages">
   <%= render @messages %>
 </div>
 
-<%= text_field_tag :body, '', id: 'chat-speak' %>
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+  <div class="container">
+    <%= text_field_tag :body, '', id: "chat-speak", class: "form-control", autofocus: true %>
+  </div>
+</nav>

@@ -16,6 +16,7 @@
 
 body {
   padding-bottom: 70px;
+  padding-top: 70px;
 }
 
 #logo {
@@ -32,4 +33,8 @@ body {
 #logo:hover {
   color: #d8d8d8;
   text-decoration: none;
+}
+
+#messages {
+  padding-left: 15px;
 }
