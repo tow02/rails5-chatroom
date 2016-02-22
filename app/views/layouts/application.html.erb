@@ -15,14 +15,12 @@
 
   <body>
 
+    <%= render 'layouts/header' %>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
-    <footer>
-      <% if user_signed_in? %>
-        <%= current_user.id %>
-        <%= current_user.email %>
-      <% end %>
-      <%= link_to 'Logout', destroy_user_session_path, :method => :delete %>
-    </footer>
+    
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </body>
