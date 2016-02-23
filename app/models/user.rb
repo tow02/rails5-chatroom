@@ -24,6 +24,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_many :messages
+  has_many :rooms
   validates :username, uniqueness: true
   before_save { self.username = username.downcase }
 end
