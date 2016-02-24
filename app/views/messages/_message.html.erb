@@ -1,5 +1,5 @@
 <div class="message">
   <p>
-    <%= User.find(message.user_id).username %>: <%= message.content %> (<%= message.created_at.to_formatted_s(:long) %>)  
+    <%= User.find(message.user_id).username %>: <%= message.content %> (<%= message.created_at.localtime.to_formatted_s(:long) %>)  
   </p>
 </div>
