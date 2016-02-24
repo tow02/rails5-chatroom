@@ -3,6 +3,7 @@
 <div class="row">
   <aside class="col-md-4">
     <h2>
+      <%= image_tag @user.avatar.url(:thumb) %>
       <%= @user.username %>
       <%= @user.email %>
     </h2>

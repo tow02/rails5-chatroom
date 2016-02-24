@@ -13,6 +13,8 @@ gem 'devise', github: 'plataformatec/devise', branch: 'master'
 gem 'quiet_assets'
 gem 'gon'
 gem 'sass-rails'
+gem 'paperclip'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
