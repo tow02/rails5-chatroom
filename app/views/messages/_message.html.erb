@@ -1,12 +1,11 @@
 <div class="message">
-  <p>
+  <h5>
     <%= image_tag User.find(message.user_id).avatar.url(:thumb), size: "30x30" %>
-    <%= User.find(message.user_id).username %>: (<%= message.created_at.localtime.to_formatted_s(:long) %>)
-    <div class="panel panel-default">
-  <div class="panel-body">
-    <%= message.content %>
+    <%= link_to User.find(message.user_id).username, User.find(message.user_id) %>: (<%= message.created_at.localtime.to_formatted_s(:long) %>)
+  </h5>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <%= message.content %>
+    </div>
   </div>
-</div>
-
-  </p>
 </div>

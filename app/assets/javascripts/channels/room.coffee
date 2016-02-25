@@ -7,9 +7,6 @@ App.room = App.cable.subscriptions.create "RoomChannel",
 
   received: (data) ->
     $('#messages').append data['message']
-    # make page automatically scroll down
-    # when the new message appears in the page
-    $(window).scrollTop($(document).height());
     # Called when there's incoming data on the websocket for this channel
 
   speak: (message) ->
