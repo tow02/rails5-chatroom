@@ -17,7 +17,17 @@ $ brew install redis
 * rails: 5.0.0.beta1
 
 ## Starting server
+For rails server, open terminal and run the following command.
+
 ```bash
-$ foreman start
+$ rails server
 ```
+
+For redis server, open another tab of terminal and run the following command.
+
+```bash
+$ redis-server
+```
+
+
 
