@@ -241,6 +241,7 @@ DEPENDENCIES
   quiet_assets
   rails (= 5.0.0.beta1)
   rails_12factor
+  redis
   sass-rails
   sqlite3
   turbolinks
